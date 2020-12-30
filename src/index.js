@@ -7,7 +7,6 @@ import App from './components/App'
 import Todos from './components/Todos'
 import { reducers, initState } from './reducers/index'
 
-console.log(reducers, initState)
 const store = createStore(combineReducers(reducers), initState)
 
 render(
