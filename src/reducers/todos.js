@@ -11,4 +11,4 @@ const reducer = handleActions({
     }),
 }, initState)
 
-export { initState, reducer }
+export { reducer, initState }

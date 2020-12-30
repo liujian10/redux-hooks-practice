@@ -3,9 +3,9 @@ import * as actions from '../actions'
 import { useSelector, useDispatch } from 'react-redux'
 
 const Todos = props => {
-    // 用 useContext 来获取 state 与 dispatch
+    console.log('Todos render')
+
     const [counter, todos] = useSelector(state => [state.counter, state.todos])
-    console.log('todos', counter, todos)
     const dispatch = useDispatch()
 
     const change = val => dispatch(actions.changeText(val))

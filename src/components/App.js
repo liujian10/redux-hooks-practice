@@ -3,8 +3,8 @@ import * as actions from '../actions'
 import { useSelector, useDispatch } from 'react-redux'
 
 const App = props => {
-    // 用 useContext 来获取 state 与 dispatch
-    console.log('App', props)
+    console.log('App render')
+
     const counter = useSelector(state => state.counter)
     const dispatch = useDispatch()
 

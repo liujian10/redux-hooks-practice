@@ -11,8 +11,8 @@ const store = createStore(combineReducers(reducers), initState)
 
 render(
   <Provider store={store}>
-    <App />
     <Todos />
+    <App />
   </Provider>,
   document.getElementById('root'),
 )
